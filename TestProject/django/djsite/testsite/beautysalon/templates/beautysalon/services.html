@@ -1,0 +1,95 @@
+{% extends 'beautysalon/base.html' %}
+{% load static %}
+
+{% block styles %}
+<link type="text/css" rel="stylesheet" href="{% static 'beautysalon/css/style_services.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="services-title">
+    <h1>
+        Послуги
+    </h1>
+</div>
+<div class="services">
+    <div class="hair-design">
+        <div class="img">
+            <img src="{% static 'beautysalon/img/img1.png' %}">
+        </div>
+        <div class="description" style="bottom: 80px;">
+            <h1>
+                Дизайн і стиль волосся
+            </h1>
+            <div class="underline">
+
+            </div>
+            <p>
+                Незалежно від того, чи маєте ви на увазі конкретну стрижку та стиль, чи ви шукаєте професіонала,
+                який би допоміг вибрати те, що вам найкраще підходить, ми допоможемо вам! Наші досвідчені перукарі
+                створять для вас неповторний образ.
+            </p>
+        </div>
+    </div>
+    <div class="hair-coloring">
+        <div class="description">
+            <h1>
+                Фарбування волосся
+            </h1>
+            <div class="underline">
+
+            </div>
+            <p>
+                Тут, у салоні краси, ви правильно пофарбуєтеся з першого разу.
+                Наші експерти з радістю дадуть поради щодо ідеального повного фарбування, мелірування або балаяжу,
+                які пасуватимуть до вашої зачіски та тону шкіри та виділять вас.
+            </p>
+        </div>
+        <div class="img" style="float: right;">
+            <img src="{% static 'beautysalon/img/img2.png' %}">
+        </div>
+    </div>
+    <div class="makeup">
+        <div class="img">
+            <img src="{% static 'beautysalon/img/img3.png' %}">
+        </div>
+        <div class="description"  style="bottom: 80px;">
+            <h1>
+                Макіяж
+            </h1>
+            <div class="underline">
+
+            </div>
+            <p>
+                Наші візажисти з радістю виведуть ваш образ на новий рівень, водночас змусивши вас почуватися такими, як ви.
+                Ми використовуємо косметику тільки популярних і висококласних брендів.
+                Ви можете залишити свій улюблений макіяж або дозволити нам експериментувати з новими кольорами та стилями.
+            </p>
+        </div>
+    </div>
+    <div class="manicure">
+        <div class="description">
+            <h1>
+                Манікюр
+            </h1>
+            <div class="underline">
+
+            </div>
+            <p>
+                Зробіть собі нігті в одному з найкращих манікюрних салонів Нью-Йорка!
+                Ми пропонуємо різноманітні манікюрні послуги та процедури, в тому числі манікюр Shellac,
+                манікюр Hot Oil, SPA лікування нігтів, акриловий манікюр, японський манікюр тощо.
+            </p>
+        </div>
+        <div class="img" style="float: right;">
+            <img src="{% static 'beautysalon/img/img4.png' %}">
+        </div>
+    </div>
+</div>
+<div class="button">
+    <a href="{% url 'contacts' %}" style="margin-left: 43%;">
+        <button class="button_1">
+            Оформити візит
+        </button>
+    </a>
+</div>
+{% endblock %}

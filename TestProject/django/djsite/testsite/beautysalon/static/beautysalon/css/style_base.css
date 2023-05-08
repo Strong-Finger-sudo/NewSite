@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    background-color: black;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+a {
+    text-decoration: underline;
+}
+
+.header {
+    margin: 0 auto;
+    width: 90%;
+    weigth: 500;
+}
+
+.header > * {
+    display: flex;
+}
+
+.top-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header-phone-number {
+    width: 33%;
+    padding-top: 5px;
+}
+
+.top-header-freespace {
+    width: 33.333333333333336%;
+    height: 32px;
+}
+
+.header-social-media {
+    width: 33.333333333333336%;
+}
+
+.header-social-media > .social-media-container {
+    display: inline-block;
+    float: right;
+    margin: 0 0 0 auto;
+}
+
+.social-media-container > * {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.bottom-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.nav > * {
+    display: inline-block;
+}
+
+.nav {
+    width: 100%;
+    vertical-align: top;
+}
+
+.bottom-header-freespace{
+    width: 32%;
+}
+
+.logo {
+    margin: 0 auto;
+    padding-top: 8px;
+}
+
+.menu {
+    float: right;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.menu-list {
+    display: inline-block;
+}
+
+.menu-list > * {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.main {
+    margin: 0 auto;
+    width: 90%;
+    weigth: 500;
+    color: white;
+}
+
+.footer {
+    width: 90%;
+    margin: 0 auto;
+    weigth: 500;
+    color: white;
+    padding-top: 100px;
+}
+
+.footer-topics-title > div, .footer-topics-description > div{
+    display: inline-block;
+    width: 33%;
+}
+
+.navigation > p > a {
+    text-decoration: underline;
+    color: white;
+}
+
+.working-hours > .main-topic {
+    font-family: Bradley Hand, cursive;
+}
+
+.created-by {
+    width: 100%;
+}
+
+.created-by > * {
+    display: inline-block;
+    color: gray;
+}

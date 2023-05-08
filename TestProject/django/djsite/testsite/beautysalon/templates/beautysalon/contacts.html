@@ -1,0 +1,81 @@
+{% extends 'beautysalon/base.html' %}
+{% load static %}
+
+{% block styles %}
+<link type="text/css" rel="stylesheet" href="{% static 'beautysalon/css/style_contacts.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="contacts-title">
+    <h1>
+        Контактні данні
+    </h1>
+</div>
+<div class="contacts-short-info" style="margin-top: 200px;">
+    <div class="description">
+        <p>
+            Контактні данні
+        </p>
+        <h1>
+            Для вас двері завжди відкриті
+        </h1>
+        <h4>
+            Ми прагнемо підкреслити вашу природну красу з кожним візитом.
+        </h4>
+        <p>
+            Салон краси, заснований ще в 1999 році, був головним салоном у Нью-Йорку.
+            Наші роботи були представлені в кількох найпопулярніших журналах, таких як Vogue, Elle, W, Marie Claire та Allure!
+            Салон краси орієнтований на останні тенденції зачіски та моди!
+            Щотижня наші професійні стилісти проходять навчання у найвідоміших педагогів і навіть виїжджають за кордон
+            відвідайте найсучасніші майстер-класи з косметичних процедур!
+        </p>
+        <p>
+                Beauty Parlor пропонує повний спектр салонних і косметичних послуг, які надає команда професіоналів
+            стилісти, все в чистому та затишному середовищі. Ми практикуємо мистецтво краси та пропонуємо сучасні укладки волосся,
+            послуги фарбування та стрижки для чоловіків і жінок за дуже доступними цінами.
+        </p>
+        <div class="media-block">
+            <p>
+                Слідкуй за нами:
+            </p>
+            <ul class="social-media-container" style="position: relative; top: 5px; padding-left: 10px;">
+                {% for item in images %}
+                <li>
+                    <a href="{{ item.url }}"><img src="{{ item.social_image_header.url }}"></a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <div class="contacts">
+        <h1>
+            Адреса
+        </h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;{{ location }}
+        </p>
+        <h1>
+            Номер телефону
+        </h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;{{ phonenumber }}
+        </p>
+        <h1>
+            Email
+        </h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;{{ email }}
+        </p>
+        <h1>
+            Робочий час
+        </h1>
+        <p style="padding-bottom: 5px;">
+            &nbsp;&nbsp;&nbsp;Пн-Пт 8:00-21:00
+        </p>
+        <p style="padding-bottom: 0px;">
+            &nbsp;&nbsp;&nbsp;Сб-Вс 10:00-20:00
+        </p>
+    </div>
+</div>
+{% endblock %}

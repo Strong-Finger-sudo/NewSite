@@ -1,0 +1,78 @@
+.services-title {
+    width: 100%;
+    height: 300px;
+    background-color: #1E1F1F;
+    text-align: center;
+}
+
+.services-title > h1 {
+    padding-top: 120px;
+}
+
+h1, h4 {
+    font-family: Courier New, monospace;
+}
+
+.services {
+    margin-top: 100px;
+}
+
+.services > div {
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    border: 1px solid gray;
+}
+
+.services > div {
+    margin-bottom: 50px;
+    width: 49.7%;
+}
+
+.img {
+    display: inline-block;
+}
+
+.services > div > .img > img {
+    position: relative;
+    height: 400px;
+}
+
+.description {
+    position: relative;
+    display: inline-block;
+    width: 49.8%;
+}
+
+.underline {
+    display: inline-block;
+    width: 15%;
+    background-color: #696969;
+    height: 2px;
+}
+
+.services > div > .description > p {
+    color: gray;
+}
+
+.button {
+
+}
+
+.button_1 {
+    width: 200px;
+    height: 50px;
+    margin-top: 1em;
+    border-radius: 0;
+    border: 1px solid white;
+    background-color: black;
+	transition: all 1s ease;
+    color: white;
+    box-shadow: 0 0 5px rgba(194,194,194,0.6);
+}
+
+.button_1:hover {
+    animation-duration: 1s;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,172 @@
+.contact-block {
+    padding-top: 30px;
+}
+
+.contact-block > h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.button_1 {
+    float: right;
+    width: 200px;
+    height: 50px;
+    margin-top: 1em;
+    border-radius: 0;
+    border: 1px solid white;
+    background-color: black;
+	transition: all 1s ease;
+    color: white;
+    box-shadow: 0 0 5px rgba(194,194,194,0.6);
+}
+
+.button_1:hover {
+    animation-duration: 1s;
+    background-color: white;
+    color: black;
+}
+
+.advantages {
+    padding-top: 200px;
+}
+
+.advantages > div {
+    display: inline-block;
+    width: 24.7%;
+}
+
+.advantages > div > p {
+    color: gray;
+}
+
+.advantages-underline {
+    display: inline-block;
+    height: 1px;
+    background-color: gray;
+    width: 20%;
+}
+
+.about-work {
+    width: 100%;
+    margin-top: 150px;
+}
+
+.behind-block {
+    position: relative;
+    bottom: 300px;
+    height: 150px;
+    background-color: #212121;
+    float: right;
+}
+
+.about-work {
+    display: flex;
+    position: relative;
+}
+
+.about-work > div {
+    display: inline-block;
+    width: 49.8%;
+}
+
+.about-work > .img > img {
+    position: relative;
+    z-index: 1;
+}
+
+.offer {
+    width: 100%;
+}
+
+.offer > .topic {
+    text-align: center;
+}
+
+.offer > .topic > h1 {
+    font-family: Courier New, monospace;
+}
+
+.offer-underline {
+    display: inline-block;
+    height: 1px;
+    background-color: #696969;
+    width: 5%;
+}
+
+.offer > .topic > h2 {
+    color: #949494;
+}
+
+.offer > imgs {
+    width: 100%;
+}
+
+.offer > .imgs > div, .offer > .imgs-description > div  {
+    display: inline-block;
+    width: 20%;
+    margin-left: 50px;
+    font-family: Courier New, monospace;
+    text-align: center;
+}
+
+.offer > .imgs > div > img {
+    width: 100%;
+	transition: all 1s ease;
+	z-index: 1;
+	position: relative;
+}
+
+.offer > .imgs > div > a > button {
+    float: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 0;
+    border: 1px solid white;
+    background-color: black;
+	transition: all 1s ease;
+    color: white;
+    box-shadow: 0 0 5px rgba(194,194,194,0.6);
+}
+
+.offer > .imgs > div > a > button:hover {
+    animation-duration: 1s;
+    background-color: white;
+    color: black;
+}
+
+.offer > .imgs > div  > img:hover {
+    opacity: 0.5;
+}
+
+.contact-us {
+    display: flex;
+    position: relative;
+}
+
+.contact-us > p {
+    text-align: center;
+    font-family: Courier New, monospace;
+}
+
+.contact-us > div {
+    display: inline-block;
+    width: 40%;
+}
+
+.img-description > p {
+    color: gray;
+}
+
+.contact-us > .img-description {
+    position: relative;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.contact-us > div > div > p {
+    display: inline-block;
+}
+
+.contact-us > div > div > p.value {
+    display: inline-block;
+    color: gray;
+}

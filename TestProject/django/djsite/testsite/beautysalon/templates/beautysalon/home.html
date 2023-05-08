@@ -1,0 +1,217 @@
+{% extends 'beautysalon/base.html' %}
+{% load static %}
+
+{% block styles %}
+<link type="text/css" rel="stylesheet" href="{% static 'beautysalon/css/style_home.css' %}">
+{% endblock %}
+
+{% block content %}
+<img src="{% static 'beautysalon/img/main_picture.jpg' %}" style="width: 100%;">
+<div class="contact-block">
+    <h1 style="display: inline-block;">Приходь до нас і отримуй шанс стати зіркою</h1>
+    <a href="{% url 'contacts' %}">
+        <button class="button_1" type="button">
+            Оформити візит
+        </button>
+    </a>
+    <div class="advantages">
+        <div>
+            <h3>
+                Онлайн реєстрація
+            </h3>
+            <div>
+                <div class="advantages-underline">
+
+                </div>
+            </div>
+            <p>
+                Реєстріруйся онлайн прямо на сайті
+            </p>
+        </div>
+        <div>
+            <h3>
+                Експресс-пакети
+            </h3>
+            <div>
+                <div class="advantages-underline">
+
+                </div>
+            </div>
+            <p>
+                Ми зробимо з вас зірку за годину
+            </p>
+        </div>
+        <div>
+            <h3>
+                100% органічна косметика
+            </h3>
+            <div>
+                <div class="advantages-underline">
+
+                </div>
+            </div>
+            <p>
+                Тількі натуральні продукти
+            </p>
+        </div>
+        <div>
+            <h3>
+                Идеальний Макіяж
+            </h3>
+            <div>
+                <div class="advantages-underline">
+
+                </div>
+            </div>
+            <p>
+                Допоможимо вам знайти свій мейкап
+            </p>
+        </div>
+    </div>
+</div>
+<div class="about-work">
+    <div class="description">
+        <h5>
+            Як ми працюємо
+        </h5>
+        <h1>
+            Коли ми працюємо
+        </h1>
+        <p>
+            Ми працюємо кожен день без вихідних, з самого нарку до вечора.
+        </p>
+        <h3>
+            Пн-Пт 8:00-21:00
+        </h3>
+        <h3>
+            Сб-Вс 10:00-20:00
+        </h3>
+        <a href="{% url 'contacts' %}">
+            <button class="button_1" type="button" style="float: left;">
+                Оформити візит
+            </button>
+        </a>
+    </div>
+    <div class="img">
+        <img src="{% static 'beautysalon/img/chill_zone.png' %}" style="width: 100%;">
+        <div class="behind-block" style="width: 110%; "></div>
+    </div>
+</div>
+<div class="offer">
+    <div class="topic">
+        <h5>
+            ПОСЛУГИ
+        </h5>
+        <h1>
+            ЩО МИ ПРОПОНУЄМО
+        </h1>
+        <div class="offer-underline">
+
+        </div>
+        <h2>
+            Ми переробимо твою зовнішність до невпізнанності
+        </h2>
+    </div>
+    <div class="imgs">
+        <div class="img1">
+            <img src="{% static 'beautysalon/img/img1.png' %}">
+            <a href="{% url 'services' %}">
+                <button>
+                    Детальніше
+                </button>
+            </a>
+        </div>
+        <div class="img2">
+            <img src="{% static 'beautysalon/img/img2.png' %}">
+            <a href="{% url 'services' %}">
+                <button>
+                    Детальніше
+                </button>
+            </a>
+        </div>
+        <div class="img3">
+            <img src="{% static 'beautysalon/img/img3.png' %}">
+            <a href="{% url 'services' %}">
+                <button>
+                    Детальніше
+                </button>
+            </a>
+        </div>
+        <div class="img4">
+            <img src="{% static 'beautysalon/img/img4.png' %}">
+            <a href="{% url 'services' %}">
+                <button>
+                    Детальніше
+                </button>
+            </a>
+        </div>
+    </div>
+    <div class="imgs-description">
+        <div class="img1-description">
+            <h2>
+                Зачіска
+            </h2>
+        </div>
+        <div class="img2-description">
+            <h2>
+                Фарбування волосся
+            </h2>
+        </div>
+        <div class="img3-description">
+            <h2>
+                Макіяж
+            </h2>
+        </div>
+        <div class="img4-description">
+            <h2>
+                Манікюр
+            </h2>
+        </div>
+    </div>
+</div>
+<p style="margin-top: 150px; text-align: center;">
+    Завжди поряд
+</p>
+<h1 style="text-align: center;">
+    Напиши нам
+</h1>
+<div class="contact-us">
+    <div class="img" style="width: 50%; position: relative;">
+        <img src="{% static 'beautysalon/img/makeup.png' %}" style="width: 100%;">
+    </div>
+    <div class="img-description">
+        <h1>
+            Будь поряд
+        </h1>
+        <p>
+            Будь ласка, не забудьте забронювати свій візит заздалегідь,
+            оскільки у нас, як правило, усі майстри повністю заброньовані.
+            Зв'яжіться з нами, щоб забронювати!
+        </p>
+        <div class="phone-number">
+            <p>
+                Телефон:
+            </p>
+            <p class="value">
+                {{ phonenumber }}
+            </p>
+        </div>
+        <div class="email">
+            <p>
+                Email:
+            </p>
+            <p class="value">
+                {{ email }}
+            </p>
+        </div>
+        <div class="location">
+            <p>
+                Локація:
+            </p>
+            <p class="value">
+                {{ location }}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}
